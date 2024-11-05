@@ -1,3 +1,4 @@
+
 // SPDX-License-Identifier: GPL-2.0
 
 /dts-v1/;
@@ -12,8 +13,8 @@
 
 	config {
 		bootcmd = "mtkboardboot";
-		blink_led = "red:system";
-		system_led = "white:system";
+		blink_led = "blue:5gblue";
+		system_led = "yellow:5gyellow";
 	};
 
 	gpio-keys {
@@ -41,43 +42,43 @@
 		compatible = "gpio-leds";
 
 		led-0 {
-			label = "red:d8";
-			gpios = <&gpio 6 GPIO_ACTIVE_LOW>;
+			label = "blue:5gblue";
+			gpios = <&gpio 12 0>;
 		};
 
 		led-1 {
-			label = "blue:internet";
-			gpios = <&gpio 7 GPIO_ACTIVE_LOW>;
+			label = "yellow:5gyellow";
+			gpios = <&gpio 11 0>;
 		};
 
 		running_led: led-2 {
-			label = "blue:running";
-			gpios = <&gpio 9 GPIO_ACTIVE_LOW>;
+			label = "blue:wifi";
+			gpios = <&gpio 9 0>;
 		};
 
 		upgrade_led: led-3 {
-			label = "green:upgrade";
-			gpios = <&gpio 10 GPIO_ACTIVE_LOW>;
+			label = "blue:4gblue";
+			gpios = <&gpio 10 0>;
 		};
 
 		boot_led: led-4 {
-			label = "red:boot";
-			gpios = <&gpio 11 GPIO_ACTIVE_LOW>;
+			label = "yellow:4gyellow";
+			gpios = <&gpio 13 0>;
 		};
 
 		led-6 {
-			label = "blue:d7";
-			gpios = <&gpio 12 GPIO_ACTIVE_LOW>;
+			label = "blue:lan2";
+			gpios = <&gpio 4 1>;
 		};
 
 		led-7 {
-			label = "blue:wlan2g";
-			gpios = <&gpio 34 GPIO_ACTIVE_LOW>;
+			label = "blue:lan3";
+			gpios = <&gpio 22 1>;
 		};
 
 		led-8 {
-			label = "blue:wlan5g";
-			gpios = <&gpio 35 GPIO_ACTIVE_LOW>;
+			label = "blue:wan";
+			gpios = <&gpio 8 1>;
 		};
 	};
 
