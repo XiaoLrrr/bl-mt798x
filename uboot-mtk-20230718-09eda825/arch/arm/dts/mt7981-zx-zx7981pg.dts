@@ -51,32 +51,32 @@
 			gpios = <&gpio 11 0>;
 		};
 
-		running_led: led-2 {
+		led-2 {
 			label = "blue:wifi";
 			gpios = <&gpio 9 0>;
 		};
 
-		upgrade_led: led-3 {
+		led-3 {
 			label = "blue:4gblue";
 			gpios = <&gpio 10 0>;
 		};
 
-		boot_led: led-4 {
+		led-4 {
 			label = "yellow:4gyellow";
 			gpios = <&gpio 13 0>;
 		};
 
-		led-6 {
-			label = "blue:lan2";
+		led-5 {
+			label = "blue:lan1";
 			gpios = <&gpio 4 1>;
 		};
 
-		led-7 {
-			label = "blue:lan3";
+		led-6 {
+			label = "blue:lan2";
 			gpios = <&gpio 22 1>;
 		};
 
-		led-8 {
+		led-7 {
 			label = "blue:wan";
 			gpios = <&gpio 8 1>;
 		};
